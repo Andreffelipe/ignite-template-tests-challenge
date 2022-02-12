@@ -30,7 +30,7 @@ describe('GetStatementOperationUseCase', () => {
     }
   });
 
-  it('should ', async () => {
+  it('should return a user account transactions', async () => {
     const statementOperation = await getStatementOperationUseCase.execute({ user_id: user.id, statement_id: statement.id })
     expect(statementOperation).toMatchObject({
       type: 'deposit',
